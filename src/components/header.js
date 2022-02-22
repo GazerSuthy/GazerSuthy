@@ -3,7 +3,6 @@ import logo from "../images/logo.png";
 
 import { Icon } from "@iconify/react";
 import hamburgerButton from "@iconify/icons-icon-park-outline/hamburger-button";
-import circleX from "@iconify/icons-akar-icons/circle-x";
 
 import { Link } from "react-router-dom";
 
@@ -14,8 +13,6 @@ const Header = ({
   differentPage,
   setDifferentPage,
 }) => {
-  const hamburger = document.querySelector("#hamburger-9");
-
   return (
     <header className="header-wrapper">
       <div className="header-container container">

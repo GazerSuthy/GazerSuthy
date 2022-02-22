@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 import firstPrototype from "../images/first-prototype.png";
 import layoutPicture1 from "../images/layout-pic-1.png";
 import layoutPicture2 from "../images/layout-pic-2.png";
-import colourPicture1 from "../images/colour-theme-pic.png";
 
 const Lessons_design = () => {
   // scroll to top of page

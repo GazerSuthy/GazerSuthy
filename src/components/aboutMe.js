@@ -2,7 +2,6 @@ import React from "react";
 
 import star from "../images/about-me-pic.png";
 import stars_bg from "../images/stars.png";
-import footer_img from "../images/footer-img.png";
 
 const AboutMe = ({ aboutMeRef }) => {
   return (

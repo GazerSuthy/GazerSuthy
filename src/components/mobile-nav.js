@@ -15,7 +15,7 @@ const MobileNav = ({ setScrollTo, mobileNavActive, setMobileNavActive }) => {
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
-  }, [mobileNavActive]);
+  }, [mobileNavActive, setMobileNavActive]);
 
   return (
     <section className="mobile-nav-section">

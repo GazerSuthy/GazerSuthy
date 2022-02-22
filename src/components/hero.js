@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="hero-container">
         <img
           src={GazerSuthy}
-          alt="Gazer Suthy professional profile picture"
+          alt="Gazersuthy dressed up"
           className="profile-pic"
         />
         <div className="mission-statement">
