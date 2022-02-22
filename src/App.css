@@ -291,6 +291,10 @@ body {
     line-height: 1.6;
     margin-bottom: 1em;
   }
+  .logic-skill,
+  .creativity-skill {
+    margin: 0.639em;
+  }
 }
 
 /* ==================
@@ -342,6 +346,7 @@ body {
 .row-1-img {
   margin-bottom: -0.5rem;
   margin-left: 1rem;
+  max-width: 444px;
 }
 .row-2-img {
   max-width: 444px;
