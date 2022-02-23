@@ -15,6 +15,41 @@ import LessonsDesign from "./components/lessons_design";
 import Contact from "./components/contact";
 
 function App() {
+  /* // nav link refs
+  const homeLinkRef = useRef(null);
+  const projectLinkRef = useRef(null);
+  const aboutLinkRef = useRef(null); 
+
+  // observer section refs
+  // const projectSectionRef = useRef(null);
+
+  // implementing intersection observer {Work in Progress!!}
+  const highlightActiveNav = (entries) => {
+    // this is where we do stuff
+    const [entry] = entries;
+
+    if (entry.isIntersecting) {
+      // homeLinkRef.current.classList.remove("nav-link-active");
+      // projectLinkRef.current.classList.add("nav-link-active");
+    }
+  }; 
+
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 1,
+  };
+  
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(highlightActiveNav, options);
+    // if appsRef is rendered in, observe it
+    console.log(projectSectionRef.current);
+    if (projectSectionRef.current) {
+      observer.observe(projectSectionRef.current);
+    }
+  }); */
+
   const [mobileNavActive, setMobileNavActive] = useState(false);
   const [differentPage, setDifferentPage] = useState(false);
 
@@ -72,6 +107,10 @@ function App() {
           setScrollTo={setScrollTo}
           differentPage={differentPage}
           setDifferentPage={setDifferentPage}
+          /* // nav link refs
+          homeLinkRef={homeLinkRef}
+          projectLinkRef={projectLinkRef}
+          aboutLinkRef={aboutLinkRef} */
         ></Header>
         {mobileNavActive === true ? (
           <MobileNav
@@ -90,6 +129,7 @@ function App() {
             <Hero></Hero>
             <Abilities appsRef={appsRef}></Abilities>
             <MusicApp
+              // projectSectionRef={projectSectionRef}
               lessonsRef={lessonsRef}
               setDifferentPage={setDifferentPage}
             ></MusicApp>
@@ -98,16 +138,6 @@ function App() {
             <Contact contactRef={contactRef}></Contact>
           </Route>
         </Switch>
-        {/* <Header></Header>
-         */}
-
-        {/* <MobileNav></MobileNav> */}
-        {/* <div className="page">
-        <Hero></Hero>
-        <Abilities></Abilities>
-        <Resonate passedRef={appsRef}></Resonate>
-        <Websites passedRef={websitesRef}></Websites>
-      </div> */}
       </div>
     </BrowserRouter>
   );

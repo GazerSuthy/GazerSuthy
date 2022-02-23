@@ -19,6 +19,11 @@ const MusicApp = ({ setDifferentPage, lessonsRef }) => {
         </div>
       </div>
       <div className="project-container container">
+        {/* nav highlight block: apparently it only works on isolated blocks not section containers */}
+        {/* <div
+          className="project-nav-highlight-block"
+          ref={projectSectionRef}
+        ></div> */}
         <section className="row-1">
           <article className="row-1-description">
             <p className="row-1-text">

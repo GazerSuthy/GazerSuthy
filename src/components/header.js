@@ -12,6 +12,9 @@ const Header = ({
   mobileNavActive,
   differentPage,
   setDifferentPage,
+  homeLinkRef,
+  projectLinkRef,
+  aboutLinkRef,
 }) => {
   return (
     <header className="header-wrapper">
@@ -83,19 +86,34 @@ const Header = ({
                 className="nav-link-container project-links "
                 onClick={() => setScrollTo("home")}
               >
-                <p className="nav-link nav-link-active">Home</p>
+                <p
+                  className="nav-link home-link"
+                  // ref={homeLinkRef}
+                >
+                  Home
+                </p>
               </li>
               <li
                 className="nav-link-container project-links "
                 onClick={() => setScrollTo("apps")}
               >
-                <p className="nav-link nav-link-active">Projects</p>
+                <p
+                  className="nav-link"
+                  //  ref={projectLinkRef}
+                >
+                  Projects
+                </p>
               </li>
               <li
                 className="nav-link-container about-me-link"
                 onClick={() => setScrollTo("about-me")}
               >
-                <p className="nav-link">About Me</p>
+                <p
+                  className="nav-link"
+                  // ref={aboutLinkRef}
+                >
+                  About Me
+                </p>
               </li>
             </ul>
           </nav>
