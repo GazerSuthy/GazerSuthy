@@ -138,7 +138,7 @@ body {
 }
 .hero-wrapper {
   padding-top: 5.5rem;
-  background: url(./images/hero-bg.png);
+  background: url(./images/hero-bg-2.png);
   background-size: cover;
   height: 88.8vh;
   min-height: 800px;
@@ -184,10 +184,9 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding-top: 11em;
+    padding-top: 8.8em;
   }
   .hero-wrapper {
-    background: url(./images/hero-bg-1.png);
     background-size: cover;
     background-position-y: 44px;
   }

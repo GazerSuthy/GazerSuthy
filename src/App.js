@@ -29,8 +29,6 @@ function App() {
   const highlightActiveNav = (entries) => {
     const [entry] = entries;
 
-    console.log(entry.target);
-
     // if the observer is over the hero section, only highlight the home navbar link
     if (entry.target.className === "hero-wrapper" && entry.isIntersecting) {
       homeLinkRef.current.classList.add("nav-link-active");
