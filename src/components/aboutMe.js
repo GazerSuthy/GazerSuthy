@@ -3,9 +3,9 @@ import React from "react";
 import star from "../images/about-me-pic.png";
 import stars_bg from "../images/stars.png";
 
-const AboutMe = ({ aboutMeRef }) => {
+const AboutMe = ({ aboutSectionRef }) => {
   return (
-    <section className="about-me" ref={aboutMeRef}>
+    <section className="about-me" ref={aboutSectionRef}>
       <div className="about-container container">
         <img
           src={stars_bg}
@@ -27,15 +27,17 @@ const AboutMe = ({ aboutMeRef }) => {
               self-taught front-end developer and ui designer based in Toronto.
             </p>
             <p className="about-me-2 about-text">
-              He looks forward to new oppurtunities to collaborate with clients
-              in order to create ground breaking innovative projects. His
+              I looks forward to new oppurtunities to collaborate with clients
+              in order to create ground breaking innovative projects. My
               ambition is to form partnerships with organization to create apps
               that have meaningful impact in peoples lives.
             </p>
             <p className="about-me-3 about-text">
-              Looking back he realizes it is the greatest privelage to have the
-              freedom and resources to live a lifestyle full of abundance,
-              working on his dream projects and perfecting his craft
+              Looking back I realizes it is the greatest privelage to to be able
+              to create apps. Inspired by my hero Bruce Wayne, I always
+              envisioned myself sitting infront of the bat-computer, creating
+              gadgets to uplift others. It is a blessing to have support and
+              guidance which helps me level up in all area of life.
             </p>
             <p className="about-me-4 about-text">
               Looking forward? Looking Back? How about the now?

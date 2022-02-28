@@ -8,9 +8,9 @@ import mobileFeatures from "../images/mobile-features.png";
 
 import { Link } from "react-router-dom";
 
-const MusicApp = ({ setDifferentPage, lessonsRef }) => {
+const MusicApp = ({ setDifferentPage, lessonsRef, projectSectionRef }) => {
   return (
-    <section className="project-section">
+    <section className="project-section" ref={projectSectionRef}>
       {/* Banner Style */}
       <div className="banner">
         <div className="banner-head">

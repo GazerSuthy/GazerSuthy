@@ -15,40 +15,64 @@ import LessonsDesign from "./components/lessons_design";
 import Contact from "./components/contact";
 
 function App() {
-  /* // nav link refs
+  // nav link refs
   const homeLinkRef = useRef(null);
   const projectLinkRef = useRef(null);
-  const aboutLinkRef = useRef(null); 
+  const aboutLinkRef = useRef(null);
 
   // observer section refs
-  // const projectSectionRef = useRef(null);
+  const homeSectionRef = useRef(null);
+  const projectSectionRef = useRef(null);
+  const aboutSectionRef = useRef(null);
 
   // implementing intersection observer {Work in Progress!!}
   const highlightActiveNav = (entries) => {
-    // this is where we do stuff
     const [entry] = entries;
 
-    if (entry.isIntersecting) {
-      // homeLinkRef.current.classList.remove("nav-link-active");
-      // projectLinkRef.current.classList.add("nav-link-active");
+    console.log(entry.target);
+
+    // if the observer is over the hero section, only highlight the home navbar link
+    if (entry.target.className === "hero-wrapper" && entry.isIntersecting) {
+      homeLinkRef.current.classList.add("nav-link-active");
+      projectLinkRef.current.classList.remove("nav-link-active");
+      aboutLinkRef.current.classList.remove("nav-link-active");
     }
-  }; 
+
+    // if the observer is over the project section, only highlight the project navbar link
+    if (entry.target.className === "project-section" && entry.isIntersecting) {
+      projectLinkRef.current.classList.add("nav-link-active");
+      homeLinkRef.current.classList.remove("nav-link-active");
+      aboutLinkRef.current.classList.remove("nav-link-active");
+    }
+
+    // if the observer is over the about me section, only highlight the about navbar link
+    if (entry.target.className === "about-me" && entry.isIntersecting) {
+      aboutLinkRef.current.classList.add("nav-link-active");
+      homeLinkRef.current.classList.remove("nav-link-active");
+      projectLinkRef.current.classList.remove("nav-link-active");
+    }
+  };
 
   const options = {
     root: null,
     rootMargin: "0px",
-    threshold: 1,
+    // was not intersecting because my threshold was 1, threshold refers to the percentage the element has to be on the screen for it to intersect
+    // threshold of 1 means the whole element has to be on the viewport in order for it to intersect
+    threshold: 0,
   };
-  
 
   useEffect(() => {
     const observer = new IntersectionObserver(highlightActiveNav, options);
-    // if appsRef is rendered in, observe it
-    console.log(projectSectionRef.current);
+    if (aboutSectionRef.current) {
+      observer.observe(aboutSectionRef.current);
+    }
     if (projectSectionRef.current) {
       observer.observe(projectSectionRef.current);
     }
-  }); */
+    if (homeSectionRef.current) {
+      observer.observe(homeSectionRef.current);
+    }
+  });
 
   const [mobileNavActive, setMobileNavActive] = useState(false);
   const [differentPage, setDifferentPage] = useState(false);
@@ -107,10 +131,10 @@ function App() {
           setScrollTo={setScrollTo}
           differentPage={differentPage}
           setDifferentPage={setDifferentPage}
-          /* // nav link refs
+          // nav link refs
           homeLinkRef={homeLinkRef}
           projectLinkRef={projectLinkRef}
-          aboutLinkRef={aboutLinkRef} */
+          aboutLinkRef={aboutLinkRef}
         ></Header>
         {mobileNavActive === true ? (
           <MobileNav
@@ -126,15 +150,15 @@ function App() {
             <LessonsDesign></LessonsDesign>
           </Route>
           <Route path="/">
-            <Hero></Hero>
+            <Hero homeSectionRef={homeSectionRef}></Hero>
             <Abilities appsRef={appsRef}></Abilities>
             <MusicApp
-              // projectSectionRef={projectSectionRef}
+              projectSectionRef={projectSectionRef}
               lessonsRef={lessonsRef}
               setDifferentPage={setDifferentPage}
             ></MusicApp>
             <WebApps aboutMeRef={aboutMeRef}></WebApps>
-            <AboutMe></AboutMe>
+            <AboutMe aboutSectionRef={aboutSectionRef}></AboutMe>
             <Contact contactRef={contactRef}></Contact>
           </Route>
         </Switch>

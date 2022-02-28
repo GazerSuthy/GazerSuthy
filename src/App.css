@@ -138,9 +138,15 @@ body {
 }
 .hero-wrapper {
   padding-top: 5.5rem;
-  background: url(./images/beautiful-background.png);
+  background: url(./images/hero-bg.png);
   background-size: cover;
   height: 88.8vh;
+  min-height: 800px;
+}
+.mission-statement {
+  background: rgba(0, 0, 0, 0.1111);
+  padding: 1em 1em 1em 1em;
+  letter-spacing: 0.5px;
 }
 .profile-pic {
   border-radius: 100%;
@@ -174,12 +180,27 @@ body {
   }
 }
 @media screen and (min-width: 1700px) {
+  .hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 11em;
+  }
+  .hero-wrapper {
+    background: url(./images/hero-bg-1.png);
+    background-size: cover;
+    background-position-y: 44px;
+  }
+  .hero-container {
+    width: 77%;
+  }
   .profile-pic {
-    width: 250px;
+    width: 333px;
   }
   .mission-statement {
-    margin-top: 2em;
-    font-size: 24px;
+    text-align: left;
+    font-size: 33px;
+    padding: 1em 1em 1em 0em;
   }
   .do-text {
     font-size: 20px;
@@ -198,9 +219,29 @@ body {
   font-size: 14px;
   line-height: 1.6;
 }
+.developer-special-head {
+  font-size: 9.9px;
+}
+.special-niche {
+  color: white;
+}
+.gratitude-text {
+  color: rgb(133, 133, 133);
+}
 /* layout */
 .gratitude-section {
   position: relative;
+}
+.developer-special-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3em;
+  max-width: 777px;
+}
+.gratitude-text {
+  margin-bottom: 3em;
+  max-width: 777px;
 }
 .gratitude-container {
   width: 88%;
@@ -219,18 +260,17 @@ body {
   border-radius: 44px;
   padding: 0.5em 0.5em;
 }
+.special-niche {
+  background: #075070;
+  width: fit-content;
+  padding: 0.25em 0.5em;
+}
 .logic-card-outer {
   background: #075070;
   max-width: 384px;
   height: fit-content;
 }
-.creativity-card-outer {
-  background: #f677cf;
-  max-width: 384px;
-  height: fit-content;
-}
-.logic-card-inner,
-.creativity-card-inner {
+.logic-card-inner {
   background: white;
 }
 .card-art {
@@ -242,6 +282,7 @@ body {
   display: flex;
   align-items: center;
   margin-top: 1em;
+  height: 111px;
 }
 .card-row-2 {
   margin-bottom: 1em;
@@ -261,18 +302,10 @@ body {
   color: white;
   padding: 0.25em 1em;
 }
-.creativity-skill {
-  background: #f677cf;
-  color: white;
-  padding: 0.25em 1em;
-}
+
 .img-container {
   display: flex;
   justify-content: center;
-}
-.meditatingBat {
-  width: 202px;
-  margin: 3.3em;
 }
 
 /* Screen Size adjustment (ability section) */
@@ -291,9 +324,11 @@ body {
     line-height: 1.6;
     margin-bottom: 1em;
   }
-  .logic-skill,
-  .creativity-skill {
+  .logic-skill {
     margin: 0.639em;
+  }
+  .developer-special-head {
+    font-size: 14px;
   }
 }
 

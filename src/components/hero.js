@@ -1,9 +1,9 @@
 import React from "react";
 import GazerSuthy from "../images/profile-picture.png";
 
-const Hero = () => {
+const Hero = ({ homeSectionRef }) => {
   return (
-    <div className="hero-wrapper">
+    <div className="hero-wrapper" ref={homeSectionRef}>
       <div className="hero-container">
         <img
           src={GazerSuthy}
@@ -14,9 +14,8 @@ const Hero = () => {
           <h2 className="mission-statement-text">
             Rise to your Highest Value With The Support Of My Creations!
           </h2>
+          <h5 className="do-text">front-end developer | ui designer</h5>
         </div>
-
-        <h5 className="do-text">front-end developer | ui designer</h5>
       </div>
     </div>
   );

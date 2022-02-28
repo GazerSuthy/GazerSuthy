@@ -87,8 +87,8 @@ const Header = ({
                 onClick={() => setScrollTo("home")}
               >
                 <p
-                  className="nav-link home-link"
-                  // ref={homeLinkRef}
+                  className="nav-link home-link nav-link-active"
+                  ref={homeLinkRef}
                 >
                   Home
                 </p>
@@ -97,10 +97,7 @@ const Header = ({
                 className="nav-link-container project-links "
                 onClick={() => setScrollTo("apps")}
               >
-                <p
-                  className="nav-link"
-                  //  ref={projectLinkRef}
-                >
+                <p className="nav-link" ref={projectLinkRef}>
                   Projects
                 </p>
               </li>
@@ -108,10 +105,7 @@ const Header = ({
                 className="nav-link-container about-me-link"
                 onClick={() => setScrollTo("about-me")}
               >
-                <p
-                  className="nav-link"
-                  // ref={aboutLinkRef}
-                >
+                <p className="nav-link" ref={aboutLinkRef}>
                   About Me
                 </p>
               </li>
