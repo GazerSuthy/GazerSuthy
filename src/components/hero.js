@@ -11,11 +11,9 @@ const Hero = ({ homeSectionRef }) => {
           className="profile-pic"
         />
         <div className="mission-statement">
+          <div className="mission-statement-design"></div>
           <h2 className="mission-statement-text">
-            Rise To Your Highest{" "}
-            <em>
-              <strong>Value</strong>
-            </em>{" "}
+            Rise To Your <strong className="value-text">Highest Value</strong>{" "}
             With The Support Of My Creations!
           </h2>
           <h5 className="do-text">front-end developer | ui designer</h5>

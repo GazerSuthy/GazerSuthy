@@ -123,6 +123,9 @@ body {
   text-align: center;
   margin-top: 1em;
 }
+.value-text {
+  color: #d8b8ff;
+}
 .do-text {
   color: #beb7e7;
   letter-spacing: 1px;
@@ -138,13 +141,13 @@ body {
 }
 .hero-wrapper {
   padding-top: 5.5rem;
-  background: url(./images/hero-bg-2.png);
+  background: url(./images/hero-bg-3.png);
   background-size: cover;
   height: 88.8vh;
   min-height: 800px;
 }
 .mission-statement {
-  background: rgba(0, 0, 0, 0.1111);
+  background: rgba(0, 0, 0, 0.444);
   padding: 1em 1em 1em 1em;
   letter-spacing: 0.5px;
 }
@@ -182,24 +185,44 @@ body {
 @media screen and (min-width: 1700px) {
   .hero-container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     padding-top: 4.4em;
   }
   .hero-wrapper {
     background-size: cover;
     background-position-y: 44px;
+    position: relative;
   }
   .hero-container {
     width: 77%;
   }
   .profile-pic {
     width: 369px;
+    position: absolute;
+    right: 222px;
+    top: 222px;
   }
   .mission-statement {
     text-align: left;
     font-size: 33px;
-    padding: 1em 1em 1em 0em;
+    padding: 0;
+    background: none;
+    margin-top: 3.3em;
+    z-index: 100;
+    justify-self: start;
+  }
+  .mission-statement-design {
+    position: absolute;
+    left: 0;
+    width: 888px;
+    height: 303px;
+    background: rgba(0, 0, 0, 0.639);
+    z-index: -1;
+    top: 255px;
+  }
+  .mission-statement-text {
+    width: 666px;
   }
   .do-text {
     font-size: 20px;
