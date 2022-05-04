@@ -81,7 +81,12 @@ const Websites = ({
                     View Process
                   </button>
                 </Link>
-                <button className="visit-site project-btn">Visit Site</button>
+                <a
+                  href="https://www.mrturtlespeed.com/"
+                  className="project-link"
+                >
+                  <button className="visit-site project-btn">Visit Site</button>
+                </a>
               </div>
             </div>
           </div>

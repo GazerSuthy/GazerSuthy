@@ -127,19 +127,30 @@ const ViewProcess = () => {
             </div>
 
             <div className="flex-container">
-              <article className="explain-action text-bg">
-                <p className="mindmap-p1">
-                  The project section is designed to grab the users’ attention
-                  with the use of a bright cooured background. Both before and
-                  after states of the project are shown to emphasize the
-                  transformation during the renovation.
-                </p>
-                <p className="mindmap-p2">
-                  By decreasing the size of the before picture, it allows the
-                  user to focus mainly on the results of the project with the
-                  hint of the projects original conditions.
-                </p>
-              </article>
+              <div className="cta-container">
+                <article className="explain-action text-bg">
+                  <p className="mindmap-p1">
+                    The project section is designed to grab the users’ attention
+                    with the use of a bright cooured background. Both before and
+                    after states of the project are shown to emphasize the
+                    transformation during the renovation.
+                  </p>
+                  <p className="mindmap-p2">
+                    By decreasing the size of the before picture, it allows the
+                    user to focus mainly on the results of the project with the
+                    hint of the projects original conditions.
+                  </p>
+                </article>
+
+                <a
+                  href="https://www.mrturtlespeed.com/"
+                  className="project-link"
+                >
+                  <button className="view-process call-to-action-btn project-btn">
+                    Visit Site
+                  </button>
+                </a>
+              </div>
 
               <img
                 src={projectSlideshowMob}
