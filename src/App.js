@@ -9,10 +9,10 @@ import Hero from "./components/hero";
 import Abilities from "./components/abilities";
 import MusicApp from "./components/musicApp";
 import AboutMe from "./components/aboutMe";
-import WebApps from "./components/webApps";
+import ClientBuilds from "./components/clientBuilds";
 import MobileNav from "./components/mobile-nav";
-import LessonsDesign from "./components/lessons_design";
 import Contact from "./components/contact";
+import ViewProcess from "./components/perfectUniverse";
 
 function App() {
   // nav link refs
@@ -81,7 +81,7 @@ function App() {
   const [scrollTo, setScrollTo] = useState("");
   const appsRef = useRef(null);
   const aboutMeRef = useRef(null);
-  const lessonsRef = useRef(null);
+  const projectRef = useRef(null);
   const contactRef = useRef(null);
 
   // scroll functions
@@ -94,8 +94,8 @@ function App() {
   const scrollToAboutMe = () => {
     aboutMeRef.current.scrollIntoView({ behavior: "smooth" });
   };
-  const scrollToLessons = () => {
-    lessonsRef.current.scrollIntoView({ behavior: "smooth" });
+  const scrollToProjects = () => {
+    projectRef.current.scrollIntoView({ behavior: "smooth" });
   };
   const scrollToContact = () => {
     contactRef.current.scrollIntoView({ behavior: "smooth" });
@@ -111,8 +111,8 @@ function App() {
     } else if (scrollTo === "about-me") {
       scrollToAboutMe();
       setScrollTo("");
-    } else if (scrollTo === "lessons") {
-      scrollToLessons();
+    } else if (scrollTo === "projects") {
+      scrollToProjects();
       setScrollTo();
     } else if (scrollTo === "contacts") {
       scrollToContact();
@@ -144,18 +144,19 @@ function App() {
           ""
         )}
         <Switch>
-          <Route path="/stepUp-design">
-            <LessonsDesign></LessonsDesign>
+          <Route path="/perfectUniverse">
+            <ViewProcess></ViewProcess>
           </Route>
           <Route path="/">
             <Hero homeSectionRef={homeSectionRef}></Hero>
             <Abilities appsRef={appsRef}></Abilities>
-            <MusicApp
-              projectSectionRef={projectSectionRef}
-              lessonsRef={lessonsRef}
+            <MusicApp></MusicApp>
+            <ClientBuilds
+              projectRef={projectRef}
+              aboutMeRef={aboutMeRef}
               setDifferentPage={setDifferentPage}
-            ></MusicApp>
-            <WebApps aboutMeRef={aboutMeRef}></WebApps>
+              setScrollTo={setScrollTo}
+            ></ClientBuilds>
             <AboutMe aboutSectionRef={aboutSectionRef}></AboutMe>
             <Contact contactRef={contactRef}></Contact>
           </Route>

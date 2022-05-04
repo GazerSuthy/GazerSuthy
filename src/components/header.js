@@ -43,7 +43,7 @@ const Header = ({
                 <li
                   className="nav-link-container project-links "
                   onClick={() => {
-                    setScrollTo("lessons");
+                    setScrollTo("projects");
                     setDifferentPage(false);
                   }}
                 >
@@ -70,7 +70,7 @@ const Header = ({
                 <li
                   className="nav-link-container project-links "
                   onClick={() => {
-                    setScrollTo("lessons");
+                    setScrollTo("projects");
                     setDifferentPage(false);
                   }}
                 >

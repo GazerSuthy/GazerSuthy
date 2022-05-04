@@ -3,12 +3,9 @@ import React from "react";
 // img
 import resonate_pic1 from "../images/resonate-1.png";
 import resonate_pic2 from "../images/resonate-2.png";
-import cardArt1 from "../images/card-art-1.png";
 import mobileFeatures from "../images/mobile-features.png";
 
-import { Link } from "react-router-dom";
-
-const MusicApp = ({ setDifferentPage, lessonsRef, projectSectionRef }) => {
+const MusicApp = ({ projectSectionRef }) => {
   return (
     <section className="project-section" ref={projectSectionRef}>
       {/* Banner Style */}
@@ -94,9 +91,7 @@ const MusicApp = ({ setDifferentPage, lessonsRef, projectSectionRef }) => {
           </tbody>
         </table>
 
-        <div className="lesson-ref" ref={lessonsRef}></div>
-
-        <section className="lesson-learned-intro">
+        {/* <section className="lesson-learned-intro">
           <div className="lesson-head">
             <h2 className="mistake-title">Mistakes</h2>
             <div className="lesson-line-style"></div>
@@ -149,7 +144,7 @@ const MusicApp = ({ setDifferentPage, lessonsRef, projectSectionRef }) => {
               </button>
             </Link>
           </div>
-        </section>
+        </section> */}
 
         <section className="media-types">
           <h2 className="media-title">Mobile App Features</h2>

@@ -16,6 +16,11 @@ body {
   font-family: "Chakra Petch", sans-serif;
 }
 
+:root {
+  --pink-color: #ffb7c6;
+  --light-pink-color: #ffeaf1;
+}
+
 /* general styles */
 .underline {
   text-transform: underline;
@@ -1067,11 +1072,15 @@ Step up design page
 }
 .about-ref-block {
   position: absolute;
-  bottom: 77px;
+  bottom: 66px;
+  width: 11px;
+  height: 11px;
 }
-.lessons-ref {
+.project-ref {
   position: absolute;
-  bottom: 11px;
+  width: 11px;
+  height: 11px;
+  top: 333.33px;
 }
 
 /* ================
@@ -1112,6 +1121,255 @@ footer {
   border-collapse: separate;
   border-spacing: 1em 2em;
 }
+
+/* ======================
+  Client Build Projects
+=========================*/
+.project-card {
+  background-image: url("./images/sakura-petal-bg.png");
+  background-repeat: no-repeat;
+  background-position: 0px 55px;
+  padding: 0em 2em;
+  border-radius: 33px;
+  border: 1px solid #fce9e9;
+}
+.project-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.client-project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4.4em;
+  margin-bottom: 8em;
+}
+.project1-logo {
+  display: inline-block;
+  border: 2px solid var(--pink-color);
+  width: 256px;
+  margin-top: 2em;
+  z-index: 100;
+  background: white;
+}
+.project-text {
+  line-height: 1.6;
+  margin: 1em 0;
+  width: 256px;
+}
+.proj-desc-bg,
+.project-text-2 {
+  display: none;
+}
+.project-btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: none;
+  letter-spacing: 0.5px;
+  margin-top: 3em;
+  transition: background ease-in 200ms;
+}
+.project-btn:hover,
+.project-btn:focus {
+  cursor: pointer;
+  background: #c0104e;
+  color: white;
+}
+.project-action-btns {
+  margin-bottom: 3em;
+}
+.view-process {
+  background: #ffc1d7;
+  margin-right: 1em;
+}
+
+.visit-site {
+  background: #ffe8f0;
+  border: 2px solid #ffc1d7;
+  color: #000000;
+}
+
+/* ==================
+    ViewProcess 
+=====================*/
+/* typography */
+.role-label {
+  color: #d4af37;
+  margin-right: 2em;
+  letter-spacing: 0.8px;
+  font-size: 1.11rem;
+}
+.project-role {
+  font-size: 0.9rem;
+}
+.x-highlight,
+.number-highlight {
+  color: #605f5f;
+  margin: 0 0.5em;
+}
+/* layout */
+.viewProcess-bg {
+  background: #333333;
+  min-height: 100vh;
+  padding: 8.8em 0;
+  color: white;
+}
+.process-container {
+  width: 88%;
+  margin: 0 auto;
+}
+.roles {
+  margin-top: 1em;
+  margin-bottom: 5em;
+}
+
+@media screen and (min-width: 1440px) {
+  .role-label {
+    font-size: 1.4rem;
+  }
+  .project-role {
+    font-size: 1rem;
+  }
+}
+
+/* ===============================
+    Perfect Universe Strategy Session 
+===================================*/
+/* typography */
+.analysis-head {
+  font-weight: 400;
+  margin-bottom: 0.8em;
+  letter-spacing: 0.5px;
+}
+.number-highlight {
+  font-weight: bold;
+}
+.article-label {
+  color: #22f4a8;
+  margin-bottom: 0.5em;
+}
+
+/* layout */
+.mindmap {
+  width: 100%;
+  margin-bottom: 1em;
+  max-width: 888px;
+}
+.text-bg {
+  background: #444444;
+  padding: 2.2em 1em;
+  line-height: 1.6;
+  max-width: 891px;
+}
+.text-bg p:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+.self-goal {
+  margin-bottom: 3.3em;
+}
+.project-table {
+  width: 100%;
+  margin: 2em 0;
+  max-width: 666px;
+}
+.clients-choice {
+  background: #292929;
+  max-width: 444px;
+  padding: 2em;
+  height: fit-content;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 6.39em;
+}
+.yellow-highlight {
+  color: #ffe817;
+  letter-spacing: 0.5px;
+}
+.img-caption {
+  margin-top: 1em;
+  letter-spacing: 0.5px;
+  font-size: 0.8rem;
+  color: #868686;
+  width: 88%;
+  text-align: center;
+}
+.slideshow-container {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(360deg, #292929 80%, #33333333 20%);
+  margin-bottom: 3em;
+  padding: 1em 0 3em 0;
+  flex-direction: column;
+}
+.slideshow-img {
+  max-width: 1234px;
+  width: 93.6%;
+}
+.explain-action {
+  margin-bottom: 5em;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobile-slideshow {
+  width: 144px;
+}
+.wireframe {
+  max-width: 666px;
+}
+
+@media screen and (min-width: 1789px) {
+  .analysis-head {
+    font-size: 1.5rem;
+  }
+  .mindmap-box,
+  .wireframe-box,
+  .table-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .text-bg {
+    max-width: 444px;
+    height: fit-content;
+    padding-bottom: 3em;
+  }
+  .self-goal {
+    max-width: none;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-top: 3.3em;
+    margin-bottom: 8em;
+  }
+  .clients-choice {
+    font-size: 1.2rem;
+    margin-top: 2.5em;
+  }
+  .project-col2 {
+    margin-bottom: 6.6em;
+  }
+  .img-caption {
+    font-size: 1rem;
+  }
+  .explain-action {
+    max-width: 888px;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 1.1rem;
+  }
+  .slideshow-container {
+    margin-bottom: 6.6em;
+  }
+  .flex-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .mobile-slideshow {
+    width: 222px;
+  }
+}
+
 /* container adjustments on big screen */
 @media screen and (min-width: 1440px) {
   .gratitude-container,
@@ -1120,7 +1378,8 @@ footer {
   .project-container,
   .design-container,
   .sites-container,
-  .footer-container {
+  .footer-container,
+  .process-container {
     width: 77%;
   }
 }

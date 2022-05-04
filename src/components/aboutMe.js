@@ -1,22 +1,11 @@
 import React from "react";
 
 import star from "../images/about-me-pic.png";
-import stars_bg from "../images/stars.png";
 
 const AboutMe = ({ aboutSectionRef }) => {
   return (
     <section className="about-me" ref={aboutSectionRef}>
       <div className="about-container container">
-        <img
-          src={stars_bg}
-          alt="night sky illuminated with stars"
-          className="starsBG"
-        />
-        <img
-          src={stars_bg}
-          alt="night sky illuminated with stars"
-          className="starsBG bg-postion2"
-        />
         <h1 className="about-head">About Me</h1>
         <div className="about-info">
           <img src={star} alt="I am the star" className="about-pic" />
