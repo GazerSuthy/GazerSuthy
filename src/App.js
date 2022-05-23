@@ -13,6 +13,7 @@ import ClientBuilds from "./components/clientBuilds";
 import MobileNav from "./components/mobile-nav";
 import Contact from "./components/contact";
 import ViewProcess from "./components/perfectUniverse";
+import ContactForm from "./components/contact-form";
 
 function App() {
   // nav link refs
@@ -159,6 +160,7 @@ function App() {
             ></ClientBuilds>
             <AboutMe aboutSectionRef={aboutSectionRef}></AboutMe>
             <Contact contactRef={contactRef}></Contact>
+            <ContactForm></ContactForm>
           </Route>
         </Switch>
       </div>

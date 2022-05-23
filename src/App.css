@@ -1382,6 +1382,149 @@ footer {
   }
 }
 
+/* ==================
+  Contact Form 
+=====================*/
+/* typography */
+.get-to-know-message,
+.form-row-1 {
+  margin-top: 1.5em;
+}
+.intro-message {
+  margin-bottom: 0.8em;
+  text-align: center;
+}
+.promise-message {
+  text-align: center;
+  color: rgb(224, 224, 224);
+  letter-spacing: 0.5px;
+  margin-bottom: 1em;
+}
+.get-to-know-message {
+  color: rgb(222, 222, 222);
+  margin-bottom: -1em;
+}
+/* layout */
+.user-form {
+  background: #34203c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+  color: #ffffff;
+  padding-top: 6.39em;
+}
+.intro-message-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3em;
+}
+.form-row-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.get-to-know-message-container {
+  width: 100%;
+}
+.intro-form-pic {
+  width: 111px;
+  height: 111px;
+  border-radius: 100%;
+  margin-bottom: 1.44em;
+}
+.get-to-know-form {
+  width: 100%;
+}
+.get-to-know-form input {
+  background: #e5b9f7;
+  border: none;
+  padding: 0.8em 1em;
+  margin-bottom: 1.5em;
+}
+/* form labels */
+#firstname {
+  margin-right: 1em;
+}
+#email,
+#phone-num,
+#firstname,
+#lastname {
+  width: 100%;
+}
+
+/* budget range form */
+.budget-range {
+  margin-top: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin-bottom: 3.3em;
+}
+.form-option {
+  background: #e5b9f7;
+  color: rgb(77, 77, 77);
+  padding: 0.8em 1em;
+  letter-spacing: 0.55px;
+}
+
+/* project info form */
+.project-info {
+  margin-top: 2em;
+}
+#timeline {
+  padding: 0.8em 1em;
+  letter-spacing: 0.8px;
+  background: #e5b9f7;
+  border: none;
+  width: 100%;
+}
+#user-message {
+  width: 100%;
+  font-family: inherit;
+  letter-spacing: 0.369px;
+  margin-top: 1.5em;
+  background: #e5b9f7;
+  border: none;
+  padding: 1em;
+}
+
+.form-submit-button {
+  background: white;
+  color: #b700ff;
+  border: #d3ace2 3px solid;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.8em 1.6em;
+  margin-top: 3em;
+  border-radius: 5px;
+  transition: background ease-out 333ms;
+  margin-bottom: 3em;
+}
+.form-submit-button:hover,
+.form-submit-button:focus {
+  background: #b700ff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.get-to-know-message {
+  font-size: 1rem;
+  margin-bottom: -0.7em;
+}
+
+@media screen and (min-width: 1234px) {
+  .get-to-know-message {
+    font-size: 1.5rem;
+    margin-bottom: -0.7em;
+  }
+  .submit-user-info {
+    width: 55%;
+  }
+}
+
 /* container adjustments on big screen */
 @media screen and (min-width: 1440px) {
   .gratitude-container,
