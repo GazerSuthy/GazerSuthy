@@ -1517,8 +1517,8 @@ footer {
 
 @media screen and (min-width: 1234px) {
   .get-to-know-message {
-    font-size: 1.5rem;
-    margin-bottom: -0.7em;
+    font-size: 1.234rem;
+    margin-bottom: -0.4em;
   }
   .submit-user-info {
     width: 55%;
