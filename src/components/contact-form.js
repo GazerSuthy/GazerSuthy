@@ -6,7 +6,11 @@ const ContactForm = () => {
     <section className="user-form">
       {/* Introduction to submit form */}
       <div className="intro-message-wrapper">
-        <img src={GazerSuthy} alt="bio-picture" className="intro-form-pic" />
+        <img
+          src={GazerSuthy}
+          alt="suthashan dressed up"
+          className="intro-form-pic"
+        />
         <h2 className="intro-message">Let's build something great together</h2>
         <h5 className="promise-message">
           (You will hear back from me in 24 hours)
