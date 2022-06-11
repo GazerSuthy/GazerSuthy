@@ -84,7 +84,7 @@ const Websites = ({
                   className="project-link"
                 >
                   <button className="visit-site project-btn">
-                    Visit design
+                    Visit Website
                   </button>
                 </a>
               </div>
@@ -121,7 +121,7 @@ const Websites = ({
                   className="project-link"
                 >
                   <button className="visit-site project-btn">
-                    Visit Design
+                    Visit Design File
                   </button>
                 </a>
               </div>
