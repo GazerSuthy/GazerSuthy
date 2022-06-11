@@ -1132,6 +1132,9 @@ footer {
   padding: 0em 2em;
   border-radius: 33px;
   border: 1px solid #fce9e9;
+  margin-bottom: 3.3em;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 .project-card:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -1143,6 +1146,10 @@ footer {
   margin-top: 4.4em;
   margin-bottom: 8em;
 }
+.project-2 {
+  width: fit-content;
+  background-position: 88%;
+}
 .project1-logo {
   display: inline-block;
   border: 2px solid var(--pink-color);
@@ -1150,6 +1157,8 @@ footer {
   margin-top: 2em;
   z-index: 100;
   background: white;
+  min-height: 140px;
+  object-fit: contain;
 }
 .project-text {
   line-height: 1.6;
@@ -1234,6 +1243,10 @@ footer {
   }
   .project-role {
     font-size: 1rem;
+  }
+  .client-project-container {
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
