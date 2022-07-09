@@ -11,7 +11,7 @@ const MusicApp = ({ projectSectionRef }) => {
       {/* Banner Style */}
       <div className="banner">
         <div className="banner-head">
-          <h2 className="banner-head-title">Resonate 432hz</h2>
+          <h2 className="banner-head-title">Personal Project</h2>
           <h5 className="banner-head-about">music web-player app</h5>
         </div>
       </div>

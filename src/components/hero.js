@@ -1,5 +1,6 @@
 import React from "react";
 import GazerSuthy from "../images/profile-picture.png";
+import Cause from "../images/hero-cause.jpg";
 
 const Hero = ({ homeSectionRef }) => {
   return (

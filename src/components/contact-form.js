@@ -87,7 +87,7 @@ const ContactForm = () => {
               id="price-range-3"
             />
             {"   "}
-            $5,000 - $7,500
+            $5,000 - $10,000
           </label>
           <label htmlFor="price-range-4" className="fourth-range form-option">
             <input
@@ -97,7 +97,27 @@ const ContactForm = () => {
               id="price-range-4"
             />
             {"   "}
-            $7,500 - $10,000
+            $10,000 - $50,000
+          </label>
+          <label htmlFor="price-range-5" className="fifth-range form-option">
+            <input
+              type="radio"
+              className="form-cirle"
+              name="budget-option-5"
+              id="price-range-5"
+            />
+            {"   "}
+            $50,000 +
+          </label>
+          <label htmlFor="price-range-6" className="sixth-range form-option">
+            <input
+              type="radio"
+              className="form-cirle"
+              name="budget-option-6"
+              id="price-range-6"
+            />
+            {"   "}
+            $100,000 +
           </label>
         </section>
         {/* Project Info */}

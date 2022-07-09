@@ -1,6 +1,6 @@
 import React from "react";
 
-import star from "../images/about-me-pic.png";
+import Cause from "../images/hero-cause.jpg";
 
 const AboutMe = ({ aboutSectionRef }) => {
   return (
@@ -8,7 +8,7 @@ const AboutMe = ({ aboutSectionRef }) => {
       <div className="about-container container">
         <h1 className="about-head">About Me</h1>
         <div className="about-info">
-          <img src={star} alt="I am the star" className="about-pic" />
+          <img src={Cause} alt="I am the star" className="about-pic" />
           <article className="aboutMe-article">
             <h1 className="about-head-largescreen">About Me</h1>
             <p className="about-me-1 about-text">

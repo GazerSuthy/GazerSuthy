@@ -28,12 +28,17 @@ const Websites = ({
       {/* scroll ref */}
       <div className="project-ref" ref={projectRef}></div>
 
+      <div className="design-block"></div>
+
       <div className="sites-container">
         <section className="developersSpecial-intro">
           <article className="brief">
             <p className="brief-p1">
-              Authentic custom built web technologies engineered to leave
-              everlasting first impressions.
+              Web technologies is a medium that I use to solve your business
+              problems. From attractive web designs that make your business
+              stand out from it's competitors to custom built-in features that
+              allows you to perform certain tasks. My websites brings in results
+              that surpass your expectations!
             </p>
           </article>
           <img
@@ -61,10 +66,13 @@ const Websites = ({
               />
               <article className="project-text">
                 <p className="project-text-1">
-                  The goal of this project was to differentiate Perfect
-                  Universe’s Renovations as a long-term investment that focuses
-                  on quality, luxurious builds in contrast to other renovators
-                  that simply focus on offering the lowest bid price.
+                  The goal was to differentiate this business as a long-term
+                  investment that focuses on quality, luxurious builds. With the
+                  solution of having a built-in slideshow feature that showcased
+                  their work, they were able to improve their client's trust by
+                  showing results. Incomparison to their previous marketing
+                  strategy of vocal promises alone, this current solution allows
+                  them to dominate their market space.
                 </p>
               </article>
               <div className="project-action-btns">
@@ -109,10 +117,11 @@ const Websites = ({
               />
               <article className="project-text">
                 <p className="project-text-1">
-                  With my role being a web designer, this project gave me the
-                  opportunity to learn from other experienced members on the
-                  team. The project lead shared remarkable wisdom which
-                  completely altered my approach to goal setting.
+                  The biggest turning point of my life was when I changed to a
+                  whole foods diet with the help of this naturopath. The choice
+                  of food not only affected by mood but also my mindset as well.
+                  It was a privilege to collobrate with this naturopath to
+                  design her best selling website!
                 </p>
               </article>
               <div className="project-action-btns">

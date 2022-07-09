@@ -1,47 +1,52 @@
 import React from "react";
 
 // imgs
-import diamond from "../images/colourful_diamond.png";
+import cccgt_logo from "../images/cccgt-logo.png";
 
 const Abilities = ({ appsRef }) => {
   return (
     <section className="gratitude-section">
       <div className="gratitude-container">
         {/* Developer Special Intro */}
-        <section className="developer-special">
-          <div className="developer-special-head">
-            <h2 className="special-title">Developer Special: </h2>
-            <h2 className="special-niche">Health & Wellness</h2>
-          </div>
-          <article className="gratitude-text">
-            Grateful to be able to create apps. Inspired by my hero Bruce Wayne,
-            I always envisioned myself sitting infront of the bat-computer,
-            creating gadgets to uplift others. It is a blessing to have support
-            and guidance which helps me level up in all area of life.
-          </article>
-        </section>
 
-        {/* Developer Special Card */}
-        <div className="logic-card-outer">
-          <div className="logic-card-inner">
-            <div className="card-row-1">
-              <img
-                src={diamond}
-                alt="colourful triangles forming a diamond"
-                className="card-art diamond"
-              />
-              <article className="card-description">
-                <p className="card-text">web apps</p>
-                <p className="card-text">personal websites</p>
-                <p className="card-text">design mockups</p>
-              </article>
+        <div className="cccgt">
+          <article className="gratitude-message">
+            <p className="partnership">
+              I’ve partnered with this amazing Toronto organization that you may
+              know of.
+            </p>
+            <p className="gratitude-desc">
+              It is the greatest privelage to design the website for the Chinese
+              Cultural Centre. Their cause for supporting and strengthening
+              their local area inspired me to join this wholesome community!
+            </p>
+          </article>
+
+          <section className="cccgt-logo-wrapper">
+            <img
+              src={cccgt_logo}
+              alt="Chinese Cultural Centre Logo"
+              className="cccgt-logo"
+            />
+
+            <div className="case-study-btns">
+              <a href="https://www.cccgt.org" className="cccgt-btn visit">
+                visit website
+              </a>
+              <a
+                href="https://www.figma.com/file/qN7iNnlso14NL95GVTwm9A/CCCGT?node-id=0%3A1"
+                className="cccgt-btn view"
+              >
+                view design
+              </a>
+              <a
+                href="https://www.figma.com/file/GmLjT5esvpFm6I45MYMyAZ/Chinese-Cultural-Center"
+                className="cccgt-btn study"
+              >
+                case study
+              </a>
             </div>
-            <div className="card-row-2 logic-skills">
-              <h6 className="logic-skill">Design</h6>
-              <h6 className="logic-skill">Develope</h6>
-              <h6 className="logic-skill">Market</h6>
-            </div>
-          </div>
+          </section>
         </div>
 
         {/* postion to scroll to */}

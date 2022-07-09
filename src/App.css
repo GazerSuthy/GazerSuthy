@@ -255,8 +255,18 @@ body {
 .gratitude-text {
   color: rgb(133, 133, 133);
 }
+.partnership {
+  font-size: 1.8rem;
+  color: #949494;
+}
+.gratitude-desc {
+  font-size: 1rem;
+  color: #4f4f4f;
+  margin-top: 2em;
+}
 /* layout */
 .gratitude-section {
+  padding: 7.7em 0;
   position: relative;
 }
 .developer-special-head {
@@ -273,89 +283,94 @@ body {
 .gratitude-container {
   width: 88%;
   margin: 0 auto;
-  padding: 6.6em 0;
+  padding: 2.2em 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 1em;
   align-items: center;
 }
-.logic-card-inner,
-.creativity-card-inner,
-.logic-card-outer,
-.creativity-card-outer {
-  border-radius: 44px;
-  padding: 0.5em 0.5em;
-}
-.special-niche {
-  background: #075070;
-  width: fit-content;
-  padding: 0.25em 0.5em;
-}
-.logic-card-outer {
-  background: #075070;
-  max-width: 384px;
-  height: fit-content;
-}
-.logic-card-inner {
-  background: white;
-}
-.card-art {
-  width: 77px;
-  height: fit-content;
-  margin-right: 1rem;
-}
-.card-row-1 {
+.cccgt-logo-wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-top: 1em;
-  height: 111px;
 }
-.card-row-2 {
-  margin-bottom: 1em;
+.cccgt {
+  width: 100%;
 }
-.logic-skills,
-.creativity-skills {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1em 0.5em;
-  justify-content: space-between;
+.cccgt-logo {
+  width: 333px;
 }
-.creativity-skills {
-  justify-content: space-evenly;
+.cccgt-btn {
+  font-size: 0.8rem;
+  border: none;
+  padding: 0.4em 0.8em;
+  margin: 0 0.4em;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.5px;
 }
-.logic-skill {
-  background: #075070;
-  color: white;
-  padding: 0.25em 1em;
+.cccgt-btn:hover,
+.cccgt-btn:focus {
+  border: 1px solid grey;
+  cursor: pointer;
 }
-
-.img-container {
-  display: flex;
-  justify-content: center;
+.visit {
+  background: #d9d9d9;
+}
+.view {
+  background: #a1d5b8;
+}
+.study {
+  background: #ffb812;
+}
+.cccgt-logo-wrapper {
+  margin-top: 4em;
+}
+.case-study-btns {
+  margin-top: 3em;
 }
 
 /* Screen Size adjustment (ability section) */
 @media screen and (min-width: 1440px) {
+  .cccgt {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .cccgt-logo {
+    width: 555px;
+  }
+  .gratitude-message {
+    width: 50%;
+    margin-right: 5.5em;
+  }
+  .partnership {
+    font-size: 2rem;
+  }
+  .gratitude-desc {
+    font-size: 1.2rem;
+  }
   .gratitude-container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 6.6em 0;
   }
-  .card-row-1,
-  .card-row-2 {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .cccgt-logo-wrapper {
+    margin-top: 0;
   }
-  .card-text {
-    line-height: 1.6;
-    margin-bottom: 1em;
+  .case-study-btns {
+    align-self: flex-start;
+    margin-top: 3.3em;
   }
-  .logic-skill {
-    margin: 0.639em;
+  .cccgt-btn {
+    font-size: 1rem;
+    padding: 0.6em 1em;
   }
-  .developer-special-head {
-    font-size: 14px;
+  .visit {
+    margin-left: 0;
   }
 }
 
@@ -387,8 +402,9 @@ body {
   margin: 0 auto;
 }
 .banner {
-  background: url(./images/cosmic.png);
+  background: url(./images/blue-sky.jpg);
   background-size: cover;
+  background-position: center;
   padding: 2em 0;
 }
 .banner-head {
@@ -409,6 +425,7 @@ body {
   margin-bottom: -0.5rem;
   margin-left: 1rem;
   max-width: 444px;
+  object-fit: contain;
 }
 .row-2-img {
   max-width: 444px;
@@ -642,7 +659,7 @@ table {
     padding: 3.3em 0;
   }
   .banner-head {
-    padding: 1em 2em;
+    padding: 1em 5em;
     width: 444px;
   }
   .banner-head-title {
@@ -725,6 +742,20 @@ Developer's Special Section
     display: flex;
     justify-content: space-between;
   }
+
+  .brief-p1 {
+    line-height: 2;
+    font-size: 1.23rem;
+    letter-spacing: 1px;
+  }
+
+  .design-block {
+    width: 555px;
+    height: 369px;
+    background: rgba(255, 192, 203, 0.22);
+    position: absolute;
+    left: 50%;
+  }
 }
 
 /* ===========
@@ -766,8 +797,8 @@ Developer's Special Section
   position: relative;
 }
 .about-pic {
-  width: 111.1px;
-  margin-bottom: 2.2em;
+  width: 333px;
+  margin-bottom: 1.1em;
   z-index: 100;
 }
 .starsBG {
@@ -811,7 +842,7 @@ Developer's Special Section
     font-size: 33px;
   }
   .about-pic {
-    width: 144px;
+    width: 444px;
   }
   .aboutMe-article {
     font-size: 18px;
@@ -833,7 +864,8 @@ Developer's Special Section
     margin-bottom: 1em;
   }
   .about-pic {
-    width: 222px;
+    width: 555px;
+    margin-top: 5.5em;
   }
   .aboutMe-article {
     font-size: 18px;
@@ -1247,6 +1279,8 @@ footer {
   .client-project-container {
     flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
+    margin-top: 5em;
   }
 }
 
