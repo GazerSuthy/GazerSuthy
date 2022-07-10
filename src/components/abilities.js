@@ -39,12 +39,6 @@ const Abilities = ({ appsRef }) => {
               >
                 view design
               </a>
-              <a
-                href="https://www.figma.com/file/GmLjT5esvpFm6I45MYMyAZ/Chinese-Cultural-Center"
-                className="cccgt-btn study"
-              >
-                case study
-              </a>
             </div>
           </section>
         </div>
